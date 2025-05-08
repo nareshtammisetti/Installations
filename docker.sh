@@ -15,5 +15,6 @@ sudo apt-get update
 sleep 2
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 sudo apt install docker-compose -y
-sudo chmod -aG ubuntu docker
+sudo usermod -aG docker ubuntu
+
 echo "Docker-compose is installed successfully"
